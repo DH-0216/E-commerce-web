@@ -6,57 +6,69 @@
 
 .main-section-1 {
   position: relative;
-  background: url(../../assets/abstract-textured-backgound.jpg) no-repeat center
+  background: url("../../assets/wmremove-transformed.png") no-repeat center
     center;
   background-size: cover;
-  background-attachment: fixed;
   padding-top: 170px;
   padding-bottom: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  min-height: 400px;
 }
 
-.main-section-1 img {
+.main-section-1 .img {
   width: 500px;
+  height: 800px;
   border-radius: 10px;
-  
+  background-blend-mode: multiply;
 }
 
-.main-text {
+.main-section-1 .main-text {
   text-align: center;
-  padding: 20px;
 }
 
-.main-text h2 {
+.main-section-1 .main-text h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #c0c0c0;
+  animation: fadeIn 5s ease-out forwards;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.main-text p {
+.main-section-1 .main-text p {
+  font-family: "Luxurious Roman", serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #f8f9fa;
-  margin-top: 50px;
+  margin-top: 55px;
+  animation: fadeIn 5s ease-out forwards;
+  animation-delay: 0.5s;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.main-text .btn {
+.main-section-1 .main-text .btn {
   background-color: transparent;
   color: #fff;
   font-weight: bold;
   font-size: 1rem;
   padding: 10px 20px;
   border: 2px solid #c0c0c0;
+  box-shadow: 0 0 10px 1px rgba(192, 192, 192, 0.7);
   border-radius: 25px;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  margin-top: 20px;
+  margin-top: 25px;
+  animation: moveUp 2s ease-in-out forwards;
+  animation-delay: 1s;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.main-text .btn:hover {
+.main-section-1 .main-text .btn:hover {
   background-color: #fff;
   color: #000;
   transform: scale(1.05);
@@ -64,10 +76,9 @@
 
 .main-section-2 {
   position: relative;
-  background: url(../../assets/abstract-textured-backgound.jpg) no-repeat center
-    center;
+  background: url("../../assets/DeWatermark.ai_1735411162070.png")
+    no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   padding-top: 170px;
   padding-bottom: 90px;
   color: #fff;
@@ -82,17 +93,25 @@
 }
 
 .main-section-2 .main-text .desc {
+  font-family: "Josefin Sans ", serif;
   font-size: 2rem;
   font-weight: bold;
   color: #ae8625;
   margin-bottom: 20px;
+  margin-top: 50px;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .main-section-2 .main-text .sub-desc {
+  font-family: "Luxurious Roman", serif;
   font-size: 1.2rem;
   line-height: 1.8;
   color: #f8f9fa;
   margin-top: 50px;
+  visibility: hidden;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 
 .main-section-2 .button-container {
@@ -101,6 +120,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  gap: 25px;
 }
 
 .main-section-2 .button-container .menu,
@@ -115,8 +135,19 @@
   border: 2px solid #ae8625;
   border-radius: 25px;
   text-transform: uppercase;
+  box-shadow: 0 0 10px 1px rgba(255, 204, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.main-section-2 .button-container .menu {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
+.main-section-2 .button-container .shop-now {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1.25s;
+}
 .main-section-2 .button-container .menu:hover,
 .main-section-2 .button-container .shop-now:hover {
   background-color: #ae8625;
@@ -143,8 +174,8 @@
 
 .main-section-3 {
   position: relative;
-  background: url(../../assets/abstract-textured-backgound.jpg) no-repeat center
-    center;
+  background: url("../../assets/abstract-textured-backgound.jpg") no-repeat
+    center center;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 170px;
@@ -162,32 +193,36 @@
 }
 
 .main-section-3 .main-text h2 {
+  font-family: "Josefin Sans", serif;
   font-size: 2.5rem;
   font-weight: bold;
   color: #b88a44;
   margin-bottom: 20px;
-  animation: blurIn 2s ease-out forwards;
+  margin-top: 30px;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .main-section-3 .main-text .desc {
+  font-family: "Luxurious Roman", serif;
   font-size: 1.2rem;
   line-height: 1.8;
   color: #c0c0c0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .main-section-3 .main-text .sub-desc {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #ddd;
-  margin-bottom: 15px;
+  font-family: "Luxurious Roman", serif;
+  font-size: 1.2rem;
+  color: #c0c0c0;
 }
 
 .main-section-3 .button-container {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 40px;
+  gap: 25px;
 }
 
 .main-section-3 .button-container .btn {
@@ -197,6 +232,7 @@
   font-size: 1rem;
   padding: 10px 20px;
   border: none;
+  box-shadow: 0 0 10px 1px rgba(255, 204, 0, 0.7);
   border-radius: 25px;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -206,6 +242,7 @@
   background-color: #fff;
   color: #000;
   transform: scale(1.05);
+  box-shadow: 0 0 10px 3px rgba(192, 192, 192, 0.7);
 }
 
 .main-section-3 .button-container a {
