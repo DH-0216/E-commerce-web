@@ -1,0 +1,196 @@
+header .navbar {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+header .navbar.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 15ms ease-in-out;
+  -moz-transition: all 15ms ease-in-out;
+  -o-transition: all 15ms ease-in-out;
+  -ms-transition: all 15ms ease-in-out;
+  transition: all 15ms ease-in-out;
+  animation-name: stickyTransition;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+  -moz-box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+}
+@keyframes stickyTransition {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+header .ms-auto {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+header .logo img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  left: -80px;
+}
+header a {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 1rem !important;
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 500;
+  font-family: var(--oswald-font);
+  text-transform: uppercase;
+  -webkit-transition: all 15ms ease-in-out;
+  -ms-transition: all 15ms ease-in-out;
+  -o-transition: all 15ms ease-in-out;
+  -moz-transition: all 15ms ease-in-out;
+  transition: all 15ms ease-in-out;
+  text-decoration: none;
+}
+
+header a:hover,
+header .cart i:hover,
+.ms-auto .d-flex i:hover,
+.ms-auto .custom-dropdown-title:hover,
+.ms-auto .dropdown-toggle:hover,
+.ms-auto .dropdown-toggle:hover .custom-dropdown-title {
+  color: #AE8625 !important;
+}
+
+header .sticky a,
+header .sticky .cart i,
+.sticky .ms-auto .d-flex i {
+  color: #fff;
+}
+
+header .sticky a:hover,
+header .sticky .cart:hover i,
+.sticky .ms-auto .d-flex i:hover,
+.sticky .ms-auto .custom-dropdown-title:hover,
+.sticky .ms-auto .dropdown-toggle:hover,
+.sticky .ms-auto .dropdown-toggle:hover .custom-dropdown-title {
+  color: #AE8625;
+}
+.ms-auto .custom-dropdown-title,
+.ms-auto .dropdown-toggle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #fff !important;
+  font-family: var(--oswald-font) !important;
+  text-transform: uppercase;
+  -webkit-transition: all 15ms ease-in-out;
+  -ms-transition: all 15ms ease-in-out;
+  -o-transition: all 15ms ease-in-out;
+  -moz-transition: all 15ms ease-in-out;
+  transition: all 15ms ease-in-out;
+  text-decoration: none;
+}
+
+.custom-dropdown a{
+  color: #000 !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ms-auto .dropdown-toggle::after {
+  margin-left: 10px;
+}
+.ms-auto .cart {
+  position: relative;
+  right: -40px;
+}
+.ms-auto .cart i,
+.ms-auto .d-flex i {
+  color: white;
+  font-size: 25px;
+}
+.ms-auto .d-flex {
+  position: relative;
+  display: flex;
+  margin-left: 20px;
+}
+.ms-auto .d-flex .search {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  top: -0.4375rem;
+  border: 2px solid #2572d8;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+.ms-auto .d-flex i {
+  margin-left: 15px;
+}
+.ms-auto .sign-in-button,
+.ms-auto .sign-up-button {
+  position: relative;
+  background-color: #AE8625;
+  color: #fff;
+  padding: 6px 25px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: var(--oswald-font);
+  font-weight: 500;
+  right: -70px;
+}
+
+.sticky .ms-auto .sign-in-button,
+.sticky .ms-auto .sign-up-button {
+  background-color: #C0C0C0;
+  color: black;
+}
+.sticky .ms-auto .sign-in-button:hover,
+.sticky .ms-auto .sign-up-button:hover {
+  background-color: #AE8625;
+}
+
+@media (max-width: 992px) {
+  header .navbar {
+    background-color: var(--white);
+  }
+  header .navbar-toggler {
+    border: none;
+  }
+  header .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  header .navbar-toggler-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  header .nav-link {
+    color: var(--light-black);
+    padding: 1rem !important;
+  }
+}
