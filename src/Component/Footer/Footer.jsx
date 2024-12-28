@@ -51,7 +51,7 @@ function Footer() {
                 <h5>Order Now</h5>
                 <p>Quaerat neque purus ipsum</p>
                 <p>
-                  <Link to="tel:9998887777" className="calling" id = "contact-us">
+                  <Link to="tel:9998887777" className="calling" id="contact-us">
                     999-888-7777
                   </Link>
                 </p>
@@ -92,7 +92,7 @@ function Footer() {
               <div>
                 <ul className="list-unstyled text-center mb-0">
                   <li>
-                    <Link to="/">© 2024 RED OVEN All Rights Reserved</Link>
+                    <Link to="/">© 2024 Whispry All Rights Reserved</Link>
                   </li>
                   <li>
                     <Link to="/">About Us</Link>

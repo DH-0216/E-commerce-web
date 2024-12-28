@@ -163,6 +163,14 @@ header .sticky .cart:hover i,
   font-weight: 500;
   right: -70px;
 }
+.ms-auto .sign-in-button:hover,
+.ms-auto .sign-up-button:hover {
+  background-color: #C0C0C0;
+  color: black;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  
+}
 
 .sticky .ms-auto .sign-in-button,
 .sticky .ms-auto .sign-up-button {

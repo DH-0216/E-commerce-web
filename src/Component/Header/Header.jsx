@@ -1,10 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import img1 from "../../assets/1.png";
-import img2 from "../../assets/2.png";
 import img3 from "../../assets/3.png";
-import img4 from "../../assets/4.jpg";
-import img5 from "../../assets/5.jpeg";
 import "./Header.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -32,15 +28,12 @@ const Header = () => {
 
   return (
     <div>
-      <Carousel className="custom-carousel">
+      <Carousel interval={7000} indicators={false} pause={false} className="custom-carousel">
         {/* First Slide */}
         <Carousel.Item>
           <section className="main-section-1">
             <Container>
               <Row>
-                <Col lg={7} className="mb-5 mb-lg-0">
-                  <img src={img5} alt="" />
-                </Col>
                 <Col lg={5}>
                   <div className="main-text">
                     <h2>Whisper Elegance, Wear Whispry</h2>
@@ -85,7 +78,6 @@ const Header = () => {
                     </div>
                   </div>
                 </Col>
-                <img src={img2} className="img" alt="Main" />
               </Row>
             </Container>
           </section>
@@ -106,7 +98,7 @@ const Header = () => {
                       complement your personality. From bold, daring notes for
                       him to delicate, enchanting aromas for her.
                     </p>
-                    <span ref={typedElement}></span> 
+                    <span className="sub-desc" ref={typedElement}></span> 
                     <div className="button-container">
                       <button className="btn">
                         <a href="#explore-menu">Shop for Him</a>
